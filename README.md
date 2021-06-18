@@ -1,4 +1,4 @@
-
+# SGC++
 
 ## Requirements
 pytorch *1.8.1*
