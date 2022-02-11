@@ -66,9 +66,9 @@ class GraphConvolution_ac(Module):
 
 
 
-class GCN(nn.Module):
+class SGC_plus(nn.Module):
     def __init__(self, nfeat, nhid, nclass, dropout, adj, args,  features, order = 4):
-        super(GCN, self).__init__()
+        super(SGC_plus, self).__init__()
         
         self.args = args
         self.order = order
