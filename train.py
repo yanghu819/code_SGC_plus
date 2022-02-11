@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 from pygcn.utils import load_data, accuracy
-from pygcn.models import GCN
+from pygcn.models import SGC_plus
 
 import random
 
@@ -70,7 +70,7 @@ def f1(output, labels):
 
 
 # Model and optimizer
-model = GCN(nfeat=features.shape[1],
+model = SGC_plus(nfeat=features.shape[1],
             nhid=args.hidden,
             nclass=labels.max().item() + 1,
             dropout=args.dropout,
